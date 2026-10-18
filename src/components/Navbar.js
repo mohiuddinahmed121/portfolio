@@ -3,12 +3,15 @@
 import { useState } from "react";
 import { profile } from "@/data/portfolio";
 
+// "/#..." use kora hoyeche jate project details page theke-o home section-e jawa jay
 const links = [
-  { href: "#home", label: "Home" },
-  { href: "#about", label: "About" },
-  { href: "#skills", label: "Skills" },
-  { href: "#projects", label: "Projects" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#home", label: "Home" },
+  { href: "/#about", label: "About" },
+  { href: "/#skills", label: "Skills" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/#projects", label: "Projects" },
+  { href: "/#certificates", label: "Certificates" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -17,12 +20,12 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
-        <a href="#home" className="text-lg font-bold text-white">
+        <a href="/#home" className="text-lg font-bold text-white">
           {profile.shortName}
           <span className="text-orange-500">.</span>
         </a>
 
-        <ul className="hidden gap-8 md:flex">
+        <ul className="hidden gap-7 md:flex">
           {links.map((l) => (
             <li key={l.href}>
               <a

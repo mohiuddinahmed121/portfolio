@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { projects } from "@/data/portfolio";
 
 export default function Projects() {
@@ -11,11 +12,8 @@ export default function Projects() {
 
         <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {projects.map((p) => (
-            <a
-              key={p.title}
-              href={p.url}
-              target="_blank"
-              rel="noopener noreferrer"
+            <article
+              key={p.slug}
               className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-slate-950 transition hover:-translate-y-1 hover:border-orange-500/50"
             >
               {/* Screenshot: image file na thakle gradient dekhabe */}
@@ -42,8 +40,27 @@ export default function Projects() {
                     </span>
                   ))}
                 </div>
+                <div className="mt-5">
+                  {p.details ? (
+                    <Link
+                      href={`/projects/${p.slug}`}
+                      className="inline-block rounded-full bg-orange-500 px-5 py-2 text-sm font-medium text-white transition hover:bg-orange-600"
+                    >
+                      View Details
+                    </Link>
+                  ) : (
+                    <a
+                      href={p.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block rounded-full border border-orange-500 px-5 py-2 text-sm font-medium text-orange-400 transition hover:bg-orange-500 hover:text-white"
+                    >
+                      Live Demo ↗
+                    </a>
+                  )}
+                </div>
               </div>
-            </a>
+            </article>
           ))}
         </div>
       </div>
