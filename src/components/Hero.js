@@ -36,7 +36,6 @@ export default function Hero() {
             </div>
          </div>
 
-         {/* Photo: public/images/profile.jpg thakle oi chhobi dekhabe, na thakle initials */}
          <div className="relative flex h-64 w-64 items-center justify-center overflow-hidden rounded-full bg-gradient-to-br from-orange-500 to-rose-600 text-7xl font-bold text-white shadow-2xl shadow-orange-500/20 sm:h-80 sm:w-80">
             <span>{initials}</span>
             <div

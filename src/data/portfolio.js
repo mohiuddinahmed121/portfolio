@@ -1,5 +1,3 @@
-// Portfolio-r shob content ekhane. Text/link/project change korte hole shudhu ei file edit korun.
-
 export const profile = {
    name: "Mohiuddin Ahmed",
    shortName: "Mohiuddin",
@@ -11,11 +9,11 @@ export const profile = {
    location: "Dhaka, Bangladesh",
    github: "https://github.com/mohiuddinahmed121",
    linkedin: "https://www.linkedin.com/in/mohiuddinahmed121/",
-   // TODO: nijer real link boshan
+
    facebook: "https://www.facebook.com/mohiuddinahmed121",
-   // TODO: CV PDF-ta public/ folder-e ei naam-e rakhun
+
    cv: "/Mohiuddin_Ahmed_CV.pdf",
-   // TODO: nijer chhobi public/images/profile.jpg e rakhun (ager IMG_3242.JPG rename kore)
+
    photo: "/images/profile-image.jpeg",
    about: [
       "I’m a Computer Science and Engineering graduate from the University of Asia Pacific (June 2026), passionate about technology and problem-solving.",
@@ -63,13 +61,10 @@ export const skills = [
       items: ["JWT", "Role-Based Access Control", "bKash", "Stripe", "Stripe Webhooks"],
    },
    { group: "Languages", items: ["TypeScript", "JavaScript", "Python"] },
-   // University-te shikhechi, abar practice korle "Languages" e tule nite paren
+
    { group: "Foundations (university)", items: ["C", "C++", "Java"] },
 ];
-// ---------------------------------------------------------------------------
-// EXPERIENCE
-// TODO: points gulo nijer asol kaaj onujayi edit korun (certificate-er upor base kore likha).
-// ---------------------------------------------------------------------------
+
 export const experience = [
    {
       role: "Frontend Developer Intern",
@@ -81,15 +76,11 @@ export const experience = [
          "Built reusable, component-driven interfaces with close attention to detail.",
          "Followed clean code practices while working on responsive layouts.",
       ],
-      // TODO: experience certificate-er PDF public/certificates/eutropia-experience.pdf e rakhun
+
       certificate: "/eutropia-experience.pdf",
    },
 ];
 
-// ---------------------------------------------------------------------------
-// CERTIFICATES & ACHIEVEMENTS
-// Image file gulo public/images/certificates/ folder-e ache.
-// ---------------------------------------------------------------------------
 export const certificates = [
    {
       title: "InnovateX 2025 – Hackathon",
@@ -97,7 +88,6 @@ export const certificates = [
       issuer: "Software & Hardware Club, CSE-UAP",
       date: "7 May 2025",
       image: "/images/certificates/innovatex-2025.png",
-      // TODO: PDF public/certificates/innovatex-2025.pdf e rakhun
       pdf: "/innovatex-2025.pdf",
    },
    {
@@ -106,19 +96,10 @@ export const certificates = [
       issuer: "Eutropia IT Bangladesh",
       date: "Feb – Jun 2026",
       image: "/images/certificates/eutropia-experience.png",
-      // TODO: PDF public/certificates/eutropia-experience.pdf e rakhun
       pdf: "/eutropia-experience.pdf",
    },
 ];
 
-// ---------------------------------------------------------------------------
-// PROJECTS
-// `details` thakle card-e "View Details" button dekhabe ar /projects/<slug> page toiri hobe.
-// `details` na thakle card-e shudhu "Live Demo" link dekhabe.
-// `repo` = client (frontend) GitHub repository.
-// TODO: challenges ar improvements nijer asol obhiggota onujayi edit korun.
-// TODO: screenshot gulo public/images/ e rakhun (fixitnow.jpg, ums.jpg ityadi).
-// ---------------------------------------------------------------------------
 export const projects = [
    {
       slug: "fixitnow",
